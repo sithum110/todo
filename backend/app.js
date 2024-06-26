@@ -36,7 +36,7 @@ async function addUser(req, res) {
 
 async function connectdb() {
     try {
-        await mongoose.connect('mongodb://localhost:27017/todo', {
+        await mongoose.connect('mongodb://localhost:27017/mydb/mydb', {
             useNewUrlParser: true,
             useUnifiedTopology: true
         });
